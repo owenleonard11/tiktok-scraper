@@ -40,7 +40,7 @@ name | description | type
 `authorName` | the display name of the video creator | `str`
 `authorSignature` | the short bio that appears on the creator's account page | `str`
 `authorIsVerified` | whether the author's account is verified | `bool`
-`url` | a direct link to the video, computed from `authorId` and `id`
+`url` | a direct link to the video, computed from `authorId` and `id` | `str`
 `authorFollowerCount` | the number of followers the creator has | `int`
 `authorVideoCount` | the number of videos the creator has | `int`
 `soundName` | the name of the sound used in the video | `str`
