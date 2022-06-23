@@ -28,9 +28,9 @@ if not args.input_file.endswith('.har'):
 if args.type not in ['json', 'csv', None]:
     print(f'WARNING: unrecognized output type {args.type}, defaulting to json')
 
-# if no output file is given, use the same name as the input file
+# if no output file is given, set default
 if not args.out:
-    args.out = args.input_file.split('.') + '.' + (args.type or 'json')
+    args.out = 'out.' + (args.type or 'json')
 
 # create output file if not exists
 if not os.path.exists(args.out):
